@@ -11,7 +11,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         callingWebdriver();
 
-        //click kawal amin
+        //click kawal amina
         WebElement kawalAmin = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[1]"));
         kawalAmin.click();
 
