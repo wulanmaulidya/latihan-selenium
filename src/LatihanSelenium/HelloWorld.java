@@ -9,10 +9,8 @@ import java.time.Duration;
 
 public class HelloWorld {
     public static void main(String[] args) {
+        // panggil webdriver
         callWebdriver();
-
-        WebDriver tes1 = new ChromeDriver();
-        test1.get("https://aminajadulu.com/");
 
         //click kawal aminn
         WebElement kawalAmin = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[1]"));
@@ -28,7 +26,7 @@ public class HelloWorld {
 
     private static void callWebdriver() {
         // panggil directory webdriver
-        System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "supportfiles/driver/chromedriver.exe");
 
         // inisialisasi
         WebDriver test = new ChromeDriver();
