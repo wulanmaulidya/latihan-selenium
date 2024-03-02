@@ -5,20 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        // panggil directory webdriver
-        System.setProperty("webdriver.chrome.driver", "supportfiles/driver/chromedriver.exe");
-
-        // inisialisasi webdriver
+        System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
         WebDriver test = new ChromeDriver();
-
-        // set situs untuk webdriver
         test.get("https://aminajadulu.com/");
 
-        //click kawal aminn
+        //click kawal amin
         WebElement kawalAmin = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[1]"));
         kawalAmin.click();
 
@@ -29,4 +25,5 @@ public class HelloWorld {
         WebElement fakta = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[2]"));
         fakta.click();
     }
+
 }
