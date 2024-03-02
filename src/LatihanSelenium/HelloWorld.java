@@ -27,8 +27,13 @@ public class HelloWorld {
     }
 
     private static void callWebdriver() {
+        // panggil directory webdriver
         System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
+
+        // inisialisasi
         WebDriver test = new ChromeDriver();
+
+        // tentukan situs untuk webdriver
         test.get("https://aminajadulu.com/");
     }
 
