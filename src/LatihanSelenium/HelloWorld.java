@@ -9,6 +9,7 @@ import java.time.Duration;
 
 public class HelloWorld {
     public static void main(String[] args) {
+        // panggil webdriver
         callWebdriver();
 
         WebDriver tes1 = new ChromeDriver();
