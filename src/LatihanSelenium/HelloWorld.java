@@ -9,7 +9,6 @@ import java.time.Duration;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        // panggil webdriver
         callWebdriver();
 
         //click kawal aminn
@@ -25,13 +24,8 @@ public class HelloWorld {
     }
 
     private static void callWebdriver() {
-        // panggil directory webdriver
         System.setProperty("webdriver.chrome.driver", "supportfiles/driver/chromedriver.exe");
-
-        // inisialisasi
         WebDriver test = new ChromeDriver();
-
-        // tentukan situs untuk webdriver
         test.get("https://aminajadulu.com/");
     }
 
