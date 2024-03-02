@@ -9,9 +9,7 @@ import java.time.Duration;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
-        WebDriver test = new ChromeDriver();
-        test.get("https://aminajadulu.com/");
+        callWebdriver();
 
         //click kawal aminn
         WebElement kawalAmin = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[1]"));
@@ -23,6 +21,12 @@ public class HelloWorld {
         //click fakta
         WebElement fakta = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[2]"));
         fakta.click();
+    }
+
+    private static void callWebdriver() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
+        WebDriver test = new ChromeDriver();
+        test.get("https://aminajadulu.com/");
     }
 
 }
