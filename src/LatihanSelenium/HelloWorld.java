@@ -25,7 +25,7 @@ public class HelloWorld {
     }
 
     private static void callWebdriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Downloads\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "supportfiles/driver/chromedriver.exe");
         WebDriver test = new ChromeDriver();
         test.get("https://aminajadulu.com/");
     }
