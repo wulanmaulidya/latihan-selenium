@@ -13,6 +13,9 @@ public class HelloWorld {
         WebDriver test = new ChromeDriver();
         test.get("https://aminajadulu.com/");
 
+        WebDriver tes1 = new ChromeDriver();
+        test1.get("https://aminajadulu.com/");
+
         //click kawal aminn
         WebElement kawalAmin = test.findElement(By.xpath("/html/body/div[1]/nav/div/a[1]"));
         kawalAmin.click();
